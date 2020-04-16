@@ -1,4 +1,5 @@
 import path from 'path';
+import fs from 'fs';
 import csv from 'csvtojson';
 import uploadConfig from '../config/upload';
 import Transaction from '../models/Transaction';
@@ -13,6 +14,8 @@ class ImportTransactionsService {
     const filePath = path.join(uploadConfig.directory, fileName);
 
     const transactionJson = await csv().fromFile(filePath);
+
+    await fs.promises.unlink(filePath);
 
     const createTransactionService = new CreateTransactionService();
 
