@@ -10,6 +10,8 @@ import AppError from './errors/AppError';
 import createConnection from './database';
 
 createConnection();
+console.log('🚀 Connected to Database');
+
 const app = express();
 
 app.use(express.json());
@@ -22,8 +24,6 @@ app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
       message: err.message,
     });
   }
-
-  console.error(err);
 
   return response.status(500).json({
     status: 'error',
