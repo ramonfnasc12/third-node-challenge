@@ -7,6 +7,7 @@ interface TransactionReturn {
   value: number;
   type: string;
   category: string;
+  date: Date;
 }
 
 interface Balance {
@@ -39,6 +40,7 @@ export default class GetTransactionsService {
         value: cur.value,
         type: cur.type,
         category: cur.category.title,
+        date: cur.updated_at,
       });
     });
 
