@@ -1,4 +1,4 @@
-<img alt="GoStack" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
+<img alt="GoStack" src="https://cdn.pixabay.com/photo/2015/08/24/12/53/banner-904884_960_720.jpg">
 
 <h3 align="center">
   :moneybag: GoFinance Backend Challenge
